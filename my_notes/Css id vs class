@@ -1,0 +1,25 @@
+The main purpose of the Internet is to share and get information. In the real life we share information through books, papers, letters, notes etc, in the Internet we need something different, something digital. Yes, you can just put your text into a file, call it "something.html" and put in to the Internet, people will be able to open it in the browser and read it, but... Just look at this!
+
+Image
+
+It is not easy to read and comprehend information in this format. And that is why we have HTML - HyperText Markup Language. 
+HTML uses tags to tell a browser how to structure the information. 
+
+This tag <p> we use to let know the browser that this piece of data is a paragraph and it needs to be separated.
+With this tag <h1> we show that there is a heading and it need to be different from a paragraph. Tag <div> we use as a container, we can put heading and a few paragraphs inside of it. There are many tags for different kind of information, you can check the list here, for example. 
+
+With HTML we get srtuctured information. It is good enough, but what if we want to change the font? Or colour? Or position of the element on the page? It is time to meet CSS (Cascading Style Sheets ). We use CSS to style our HTML page
+
+They say information is the most powerful thing in the world. I say the presentation of the information as much as important as the information itself. If I hand you over a piece of paper with a winning lottery number, but this number is written with bad (like doctor-bad) handwriting you will not be able to understand a thing. 
+
+And that is why giving some style to your webpage is important. 
+As a web developer, you have the power to style each element on your HTML page - where? which size? and which colour? which font? border? spacing?
+There are a few ways to do so.
+
+- the most obvious - you find an openning tag of the element in your html code (for example <p> for paragraf) and give this element style (<p style="text font, color, position etc">). Right there, inside of the openning tag! And it is totally make sence if you have one html page with one element of each type (one paragraph, one picture, one heading etc). If you have two paragraphs you would need to put style="" attribute to the each of them and if you want your both paragraphs have the same apperance you would need to repet youself. More elements you have more bulky your code become. And, hey, do you remember about the importance of the presentation? It works for developers too! Just imagine you decided to change a font size for all of your <p> elements. If you have ten <p> elements on your page you are going to make a mistake somewhere, I promise. It would make sence to describe the style once and them just refer it every time when you want to use it. Ant there we get classes. Now all you need is to put class="my_amazing_style" inside each openening tag of the element you want to style and describe this style somewhere. Again, it makes sence to describe this style right in your html page, but what if you have 34 styles? It is a lot of code for one page.    
+-   
+Hello, everyone!
+I've been posponding the introduction till the last moment and it feels like this moment is here
+I am Yara, I am living in Auckland and I joined this course on Tuesday, so forgive me for this late introduction!  
+About values... I've been thinking about pretending. Somehow I have in my head that pretending is bad and being honest is good. But often it is the opposite. If I have a very bad mood and I come to the party what would happen if I am being honest? That is right, I will totally kill the party, make people feel bad and at the same time will make myself feel even worse. But if I pretend that I am having fun I may actually change my mood and have fun for real and maybe people around will smile more. Maybe being kind to people around is more important than being honest? (not maybe, for sure :)    
+I am here because I want to work in the web development industry. I belive that Internet is here to help people and I want to take a part in this process! 
