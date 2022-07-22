@@ -1,58 +1,49 @@
-// const rock = 'rock'
-// const paper = 'paper'
-// const scissors = 'scissors'
+let scissors = document.getElementById("scissors");
+let paper = document.getElementById("paper");
+let rock = document.getElementById("rock");
 
-let player1 = document.getElementById('player1')
-let player2 = document.getElementById('player2')
-
-//console.log(player2)
-
-let scissors = document.getElementById('scissors')
-let paper = document.getElementById('paper')
-let rock = document.getElementById('rock')
-
-let options = ''
+let options = "";
 
 scissors.onclick = () => {
-  options = scissors.innerHTML
-  compare()
-  //console.log(options)
-}
+  options = 'scissors';
+  compare();
+};
 
 paper.onclick = () => {
-  options = paper.innerHTML
-  compare()
-  //console.log(options)
-}
+  options = 'paper';
+  compare();
+};
 
 rock.onclick = () => {
-  options = rock.innerHTML
-  compare()
-  //console.log(options)
-}
+  options = 'rock';
+  compare();
+};
 
 function randome() {
-  return Math.floor(Math.random() * 3)
+  return Math.floor(Math.random() * 3);
 }
 
 function compMove() {
-  let arr = ['paper', 'scissors', 'rock']
-  return arr[randome()]
+  let arr = ["paper", "scissors", "rock"];
+  return arr[randome()];
 }
-
+let decs = document.getElementById("desc");
+let result = document.getElementById("result");
 function compare() {
-  let comp = compMove()
-  console.log('Computers move: ' + comp + ' Player move: ' + options)
+  let comp = compMove();
+  // document.getElementById("computer").innerHTML = " " + comp;
+  decs.innerHTML = "Computers chose " 
+    + comp 
+    + "<br> Player chose " 
+    + options;
 
   if (
-    (comp === 'paper' && options === 'rock') ||
-    (comp === 'rock' && options === 'scissors') ||
-    (comp === 'scissors' && options === 'paper')
+    (comp === "paper" && options === "rock") ||
+    (comp === "rock" && options === "scissors") ||
+    (comp === "scissors" && options === "paper")
   ) {
-    console.log('Computer wins!')
+    result.innerHTML = "Result: Computer wins!";
   } else if (comp === options) {
-    console.log('DRAW')
-  } else console.log('You win!')
+    result.innerHTML = "Result: DRAW";
+  } else result.innerHTML = "Result: You win!";
 }
-
-//console.log(comp)
